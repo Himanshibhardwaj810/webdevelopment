@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border: 10px solid rgb(253, 249, 251);
+        background-color: rgb(135, 46, 219);
+    }
+    .box1,.box2{
+        margin: 50px;
+        width:550px;
+        height: 150px;
+        position: relative;
+        background-color: palevioletred; 
+        border: white 8px solid;
+        border-radius: 80px 30px;
+    }
+    .box1{
+        animation: firstturn;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        
+        animation-fill-mode: both;
+    }
+        @keyframes firstturn {
+            from{
+                top: 0;
+                left: 0;
+
+            }
+            to{
+                top: 0px;
+                left: 3050px;
+
+            }
+            
+        }
+
+    .box2{
+        animation: 5s linear 2s infinite alternate both running leftmovement;
+
+    }
+    @keyframes leftmovement {
+            from{
+                top: 1500px;
+                left: 3050px;
+
+            }
+            to{
+                top: 1500px;
+                left: 0;
+
+            }
+            
+        }
+
+    .box3{
+        margin: 50px;
+        width:200px;
+        height: 200px;
+        position: relative;
+        background-color: palevioletred; 
+        border: white 8px solid;
+        border-radius: 100px ;
+        top: 350px;
+        left: 1625px;
+    }
+     .box3{   
+        animation: 4s linear 0s infinite alternate both running circlemovement;
+
+    }
+    @keyframes circlemovement {
+            0%{
+                top: 10%;
+                left:29%;
+                bottom: 25%;
+            }
+            
+             25%{
+                top:15%;
+                left:65%;
+                bottom:60%
+
+            } 
+             50%{
+                top:1%;
+                left:13%;
+
+            } 
+             75%{
+                top:25%;
+                left:67%
+            } 
+            95%{
+                top:60%;
+                left:65%;
+
+            } 
+        }
+
+
+    
+   
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>    
+
+        </div>
+        
+    </body>

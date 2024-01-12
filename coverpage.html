@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border: 10px solid rgb(253, 249, 251);
+        background-color: rgb(45, 9, 127);
+    }
+    .box1{
+        background-color: rgb(15, 132, 185);
+        margin-top: 200px;
+        margin-bottom: 70px;
+        padding-top: 20px;
+        height: 50vh;
+        width: 100vw;
+        border: 15px solid rgb(15, 132, 185);
+        
+    }
+    .box2{
+        margin-top: 0px;
+        margin-left: 1500px;
+        padding: 10;
+        height: 150px;
+        width: 350px;
+        background-color: rgb(255, 225, 0);
+        border:15px solid rgb(220, 234, 19); ;
+        font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+        
+    }
+    .pic{
+        display: inline;
+    height: 900px;
+    width: 900px;
+    
+    margin-left: 1300px;
+    padding: 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    }
+    .title{
+        background: radial-gradient( rgb(10, 43, 94) , rgb(31, 33, 150));
+    
+    font-size: 60px;
+    color: rgb(243, 225, 244);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    border: solid rgb(5 91 175) 20px;
+    border-radius: 1px 80px 80px 80px;
+    font-size: 80px;
+    margin-top: 100px;
+   
+    width:1000px;
+    height:100px;
+
+    transition-property: all;
+    transition-duration: 5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    }
+    .title:hover{
+    width: 3500px;
+    height:250px;
+    font-size: 150px;
+    text-shadow: 10px 10px 12px #000000;
+    background: radial-gradient(rgb(15, 132, 185) , rgb(31, 33, 150));
+    
+}
+    
+</style>
+    <body>
+
+        <div class="container">
+            <div class="title">Bouncing ball</div> 
+            <div class="box1">
+                <img class="pic" src="ball2.jpg">
+                </div>
+                <div class="box2">
+                    <a href="game.html" target="_blank">Play now</a> 
+    
+                    
+                </div>
+                
+                
+
+        </div>
+        
+    </body>
